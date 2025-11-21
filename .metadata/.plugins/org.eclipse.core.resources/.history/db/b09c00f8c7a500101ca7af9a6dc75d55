@@ -1,0 +1,35 @@
+package hilos1;
+
+import java.util.Iterator;
+
+public class TareaHilo{
+
+	private String nombreHilo;
+	
+	public TareaHilo (String nombre) {
+		this.nombreHilo=nombre;
+		System.out.println("creando"+nombreHilo);
+	}
+	
+	public void run(int tarda) {
+		// TODO Auto-generated method stub
+		System.out.println("Ejecutando"+nombreHilo);
+		int contador=0;
+		tarda=1000*tarda; // para asegurarnos que metemos segundos
+		try {
+			//el hilo realiza una tarea sencilla:contar
+			for (int i = 0; i <=5; i++) {
+				System.out.println("hilo: "+nombreHilo+", contador: "+i);
+				// hace una pequeña pausa para asimilar el trabajo y mostrar concurencia
+				Thread.sleep(tarda); // pausa de 500milisegundos
+				contador=tarda + contador;
+			}
+			}catch(InterruptedException x) {
+				System.out.println("el hilo "+nombreHilo+ "fue interrumpido.");
+			}
+		System.out.println("Terminando"+nombreHilo+"ha tardado: "+contador);
+			
+		}
+	}
+
+

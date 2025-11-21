@@ -1,0 +1,35 @@
+package hilos1;
+
+import java.util.Iterator;
+
+public class TareaHilo implements Runnable{
+
+	private String nombreHilo;
+	
+	public TareaHilo (String nombre) {
+		this.nombreHilo=nombre;
+		System.out.println("creando"+nombreHilo);
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Ejecutando"+nombreHilo);
+		int contador=0;
+		try {
+			//el hilo realiza una tarea sencilla:contar
+			for (int i = 0; i <=5; i++) {
+				System.out.println("hilo: "+nombreHilo+", contador: "+i);
+				// hace una pequeña pausa para asimilar el trabajo y mostrar concurencia
+				Thread.sleep(5000); // pausa de 500milisegundos
+				
+			}
+			}catch(InterruptedException x) {
+				System.out.println("el hilo "+nombreHilo+ "fue interrumpido.");
+			}
+		System.out.println("Terminando"+nombreHilo);
+			
+		}
+	}
+
+

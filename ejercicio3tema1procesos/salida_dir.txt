@@ -1,0 +1,16 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n�mero de serie del volumen es: BA53-5926
+
+ Directorio de C:\Users\dam2\Documents\Java doc\ejercicio3tema1procesos
+
+26/09/2025  17:09    <DIR>          .
+26/09/2025  16:39    <DIR>          ..
+26/09/2025  16:39               396 .classpath
+26/09/2025  16:39                 6 .gitignore
+26/09/2025  16:39               399 .project
+26/09/2025  16:39    <DIR>          .settings
+26/09/2025  16:40    <DIR>          bin
+26/09/2025  17:09                 0 salida_dir.txt
+26/09/2025  16:40    <DIR>          src
+               4 archivos            801 bytes
+               5 dirs  150.009.528.320 bytes libres

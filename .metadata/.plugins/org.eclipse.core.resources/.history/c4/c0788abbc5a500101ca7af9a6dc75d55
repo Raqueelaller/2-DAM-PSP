@@ -1,0 +1,10 @@
+package hilos1;
+
+public class TestHilos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
