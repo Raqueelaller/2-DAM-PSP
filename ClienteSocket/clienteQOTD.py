@@ -14,14 +14,6 @@ message = client_socket.recv(1024).decode('utf-8')
 print(message)
 
 
-# Enviar el nombre al servidor
-name = input("")
-client_socket.sendall(name.encode('utf-8'))
-
-# # Recibir el saludo del servidor
-greeting = client_socket.recv(1024).decode('utf-8')
-print(greeting)
-
 # Cerrar la conexión
 client_socket.close()
 
