@@ -1,0 +1,12 @@
+[Unit]
+Description=Mi Servicio Python
+After=network.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/raquel/psp/servidorQOTD.py
+WorkingDirectory=/home/raquel/psp
+Restart=always
+User=raquel
+Group=raquel
+[Install]
+WantedBy=multi-user.targe
